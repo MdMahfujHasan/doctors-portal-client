@@ -7,11 +7,13 @@ const DoctorRow = ({ doctor, index, refetch, setDeletingDoctor }) => {
     return (
         <tr>
             <th>{index + 1}</th>
-            <td><div class="avatar">
-                <div class="w-8 rounded">
-                    <img src={img} alt={name} />
+            <td>
+                <div class="avatar">
+                    <div class="w-8 rounded">
+                        <img src={img} alt={name} />
+                    </div>
                 </div>
-            </div></td>
+            </td>
             <td>{name}</td>
             <td>{specialty}</td>
             <td>
