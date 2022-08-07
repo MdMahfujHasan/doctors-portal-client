@@ -26,7 +26,6 @@ const Dashboard = () => {
                         <li><Link to="/dashboard/manageDoctor">Manage Doctors</Link></li>
                     </>}
                 </ul>
-
             </div>
         </div>
     );
