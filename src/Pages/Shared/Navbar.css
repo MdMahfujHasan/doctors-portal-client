@@ -1,0 +1,25 @@
+.style1:hover {
+    color: white;
+    background-color: #10b981;
+    background-image: linear-gradient(to bottom right, blue, aqua);
+    border-radius: 5%;
+}
+
+.style2:hover {
+    color: white;
+    background-color: #10b981;
+    background-image: linear-gradient(to bottom right, #a21caf, #f0abfc);
+    border-radius: 5%;
+}
+
+.style3:hover {
+    color: white;
+    background-color: #10b981;
+    background-image: linear-gradient(to bottom right, #dc2626, #fca5a5);
+    border-radius: 5%;
+}
+
+.logo:hover {
+    transform: translate(5px);
+    transition: 0.5s;
+}

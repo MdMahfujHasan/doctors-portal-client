@@ -12,7 +12,7 @@ const MyAppointments = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`https://protected-cliffs-64148.herokuapp.com/booking?patient=${user.email}`, {
+            fetch(`https://salty-cliffs-61710.herokuapp.com/booking?patient=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`

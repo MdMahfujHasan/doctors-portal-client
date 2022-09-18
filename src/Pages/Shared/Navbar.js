@@ -3,6 +3,8 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
+import interior from '../../assets/images/interior2.png';
+import './Navbar.css';
 
 const Navbar = () => {
 
@@ -14,15 +16,16 @@ const Navbar = () => {
     };
 
     const menuItems = <>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/appointment">Appointment</Link></li>
-        <li><Link to="/review">Review</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/about">About</Link></li>
+        <li className='text-blue-500 style1'><Link to="/">Home</Link></li>
+        <li className='text-fuchsia-500 style2'><Link to="/appointment">Appointment</Link></li>
+        <li className='text-blue-500 style1'><Link to="/review">Review</Link></li>
+        <li className='text-blue-500 style1'><Link to="/contact">Contact Us</Link></li>
+        <li className='text-blue-500 style1'><Link to="/about">About</Link></li>
         {
-            user && <li><Link to="/dashboard">Dashboard</Link></li>
+            user && <li className='text-fuchsia-500 style2'><Link to="/dashboard">Dashboard</Link></li>
         }
-        <li>{user ? <button className="btn btn-ghost" onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
+        <li>{user ? <button className='text-red-400 mr-1 style3' onClick={logout} >Sign Out</button> : <Link className='text-blue-500 style1' to="/login">Login</Link>}</li>
+        <li></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -35,7 +38,9 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Doctors Portal</a>
+                <Link to="/"><a className="normal-case text-xl">
+                    <img className='logo' src={interior} alt="interior" />
+                </a></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

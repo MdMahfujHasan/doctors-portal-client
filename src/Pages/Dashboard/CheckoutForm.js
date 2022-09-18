@@ -13,7 +13,7 @@ const CheckoutForm = ({ appointment }) => {
     const { _id, price, patient, patientName } = appointment;
 
     useEffect(() => {
-        fetch('https://protected-cliffs-64148.herokuapp.com/create-payment-intent', {
+        fetch('https://salty-cliffs-61710.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -80,7 +80,7 @@ const CheckoutForm = ({ appointment }) => {
                 appointment: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`https://protected-cliffs-64148.herokuapp.com/booking/${_id}`, {
+            fetch(`https://salty-cliffs-61710.herokuapp.com/booking/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

@@ -6,7 +6,7 @@ import Loading from '../Shared/Loading';
 
 const AddDoctor = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
-    const { data: services, isLoading } = useQuery('services', () => fetch('https://protected-cliffs-64148.herokuapp.com/service').then(res => res.json()))
+    const { data: services, isLoading } = useQuery('services', () => fetch('https://salty-cliffs-61710.herokuapp.com/service').then(res => res.json()))
     const imageStorageKey = 'ff705c96edb3fcac6a7c16735ce0e2be';
 
     const onSubmit = async data => {
@@ -29,7 +29,7 @@ const AddDoctor = () => {
                         img: img
                     }
                     // send to your database 
-                    fetch('https://protected-cliffs-64148.herokuapp.com/doctor', {
+                    fetch('https://salty-cliffs-61710.herokuapp.com/doctor', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',

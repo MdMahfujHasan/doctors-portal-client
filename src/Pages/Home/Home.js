@@ -1,6 +1,8 @@
 import React from 'react';
 import Footer from '../Shared/Footer';
 import Banner from './Banner';
+import Carousel from './Carousel';
+import Stat from './Stat';
 import Contact from './Contact';
 import Info from './Info';
 import LearnMore from './LearnMore';
@@ -16,6 +18,8 @@ const Home = () => {
             <Services></Services>
             <LearnMore></LearnMore>
             <MakeAppointment></MakeAppointment>
+            <Carousel></Carousel>
+            <Stat></Stat>
             <Testimonials></Testimonials>
             <Contact></Contact>
             <Footer></Footer>

@@ -27,12 +27,14 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
         <Route path="appointment" element={
           <RequireAuth>
             <Appointment />
           </RequireAuth>
         } />
+        {/* <Route path="review" element={<MyReview />} /> */}
+        {/* <Route path="contact" element={<Contact />} /> */}
+        {/* <Route path="about" element={<About />} /> */}
         <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
           <Route index element={<MyAppointments></MyAppointments>}></Route>
           <Route path="review" element={<MyReview></MyReview>}></Route>
