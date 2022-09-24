@@ -4,7 +4,7 @@ import { useQuery } from 'react-query';
 import { toast } from 'react-toastify';
 import Loading from '../Shared/Loading';
 
-const AddDoctor = () => {
+const AddService = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
     const { data: services, isLoading } = useQuery('services', () => fetch('https://salty-cliffs-61710.herokuapp.com/service').then(res => res.json()))
     const imageStorageKey = 'ff705c96edb3fcac6a7c16735ce0e2be';
@@ -146,4 +146,4 @@ const AddDoctor = () => {
     );
 };
 
-export default AddDoctor;
+export default AddService;

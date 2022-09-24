@@ -1,7 +1,7 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 
-const DoctorRow = ({ doctor, index, refetch, setDeletingDoctor }) => {
+const ServiceRow = ({ doctor, index, refetch, setDeletingDoctor }) => {
     const { name, specialty, img, email } = doctor;
 
     return (
@@ -23,4 +23,4 @@ const DoctorRow = ({ doctor, index, refetch, setDeletingDoctor }) => {
     );
 };
 
-export default DoctorRow;
+export default ServiceRow;

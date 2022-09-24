@@ -6,8 +6,7 @@ import Footer from '../Shared/Footer';
 const MyReview = () => {
     return (
         <div>
-            <Testimonials></Testimonials>
-            <Footer></Footer>
+            <h3>my reviews</h3>
         </div>
     );
 };

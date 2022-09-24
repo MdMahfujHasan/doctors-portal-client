@@ -14,8 +14,8 @@ import MyAppointments from './Pages/Dashboard/MyAppointments';
 import MyReview from './Pages/Dashboard/MyReview';
 import MyHistory from './Pages/Dashboard/MyHistory';
 import Users from './Pages/Dashboard/Users';
-import ManageDoctors from './Pages/Dashboard/ManageDoctors';
-import AddDoctor from './Pages/Dashboard/AddDoctor';
+import ManageServices from './Pages/Dashboard/ManageServices';
+import AddService from './Pages/Dashboard/AddService';
 import RequireAdmin from './Pages/Login/RequireAdmin';
 import Contact from './Pages/Home/Contact';
 import Review from './Pages/Home/Review';
@@ -41,8 +41,8 @@ function App() {
           <Route path="history" element={<MyHistory></MyHistory>}></Route>
           <Route path="payment/:id" element={<Payment></Payment>}></Route>
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
-          <Route path="addDoctor" element={<RequireAdmin><AddDoctor></AddDoctor></RequireAdmin>}></Route>
-          <Route path="manageDoctor" element={<RequireAdmin><ManageDoctors></ManageDoctors></RequireAdmin>}></Route>
+          <Route path="addService" element={<RequireAdmin><AddService></AddService></RequireAdmin>}></Route>
+          <Route path="manageService" element={<RequireAdmin><ManageServices></ManageServices></RequireAdmin>}></Route>
         </Route>
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />

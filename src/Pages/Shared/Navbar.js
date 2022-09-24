@@ -24,8 +24,10 @@ const Navbar = () => {
         {
             user && <li className='text-fuchsia-500 style2'><Link to="/dashboard">Dashboard</Link></li>
         }
-        <li>{user ? <button className='text-red-400 mr-1 style3' onClick={logout} >Sign Out</button> : <Link className='text-blue-500 style1' to="/login">Login</Link>}</li>
-        <li></li>
+        <li>{user ? <button className='bg-red-500 text-white mr-1 style3' onClick={logout} >Sign Out</button> :
+            <Link className='text-blue-500 style1' to="/login">Login</Link>}</li>
+        <li className='text-white bg-slate-500 rounded-lg'> {user ? '' : <Link to="signup">Sign Up</Link>}</li>
+
     </>
     return (
         <div className="navbar bg-base-100">

@@ -9,7 +9,7 @@ const Banner = () => {
     return (
         <div className="hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <img style={{ border: '5px solid pink', marginTop: '-130px' }} src={home} className="w-1/3 rounded-lg shadow-2xl" />
+                <img style={{ border: '5px solid pink', marginTop: '-130px' }} src={home} className="w-1/3 rounded-lg shadow-2xl" alt='' />
                 <div>
                     <h1 className="text-5xl font-bold">
                         <div class="container">

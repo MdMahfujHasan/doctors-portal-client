@@ -104,7 +104,7 @@ const Login = () => {
                         <input className='btn w-full max-w-xs text-white' type="submit" value="Login" />
                     </form>
 
-                    <p className='flex justify-center'><small>New to Doctors Portal? <Link className='text-primary' to="/signup">Create New Account</Link></small></p>
+                    <p className='flex justify-center'><small>New user? <Link className='text-primary' to="/signup">Create New Account</Link></small></p>
                     <div className="divider">OR</div>
                     <button
                         onClick={() => signInWithGoogle()}
