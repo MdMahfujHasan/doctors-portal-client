@@ -15,7 +15,7 @@ const Banner = () => {
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12 text-center">
-                                    <h3 class="animate-charcter">Your Home, The Story of Who You Are, A Collection Of What You Love</h3>
+                                    <h3 class="animate-charcter">Ask for an appointment of the doctor quickly with almost a single click. We take care of the rest.</h3>
                                     <div style={{ color: '#00FF7F', fontSize: 45, fontFamily: 'monospace', paddingTop: 10, textAlign: "center" }}>
                                         <Type />
                                     </div>

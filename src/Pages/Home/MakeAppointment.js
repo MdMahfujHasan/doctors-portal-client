@@ -8,7 +8,7 @@ const MakeAppointment = () => {
     return (
         <section style={{
             border: '5px solid pink',
-            background: `url(${kitchen})`, backgroundSize: '100%', marginTop: '100px'
+            background: `url(${kitchen})`, backgroundSize: 'cover', backgroundSize: '100%', marginTop: '100px'
         }} className='flex justify-center items-center mb-20'>
             <div className='flex-1 hidden lg:block'>
                 <img className='mt-[-75px]' src={chef} alt="" />
