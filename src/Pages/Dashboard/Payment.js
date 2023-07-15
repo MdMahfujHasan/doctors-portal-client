@@ -10,7 +10,7 @@ const stripePromise = loadStripe('pk_test_51LTaoFDwcsM1TvLG9PHRNFc1VkQ1NpQXhVvOk
 
 const Payment = () => {
     const { id } = useParams();
-    const url = `https://salty-cliffs-61710.herokuapp.com/booking/${id}`;
+    const url = `https://home-refinement-server.vercel.app/booking/${id}`;
 
     const { data: appointment, isLoading } = useQuery(['booking', id], () => fetch(url, {
         method: 'GET',

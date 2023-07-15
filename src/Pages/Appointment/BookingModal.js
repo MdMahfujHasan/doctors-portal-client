@@ -24,7 +24,7 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
             phone: event.target.phone.value
         }
 
-        fetch('https://salty-cliffs-61710.herokuapp.com/booking', {
+        fetch('https://home-refinement-server.vercel.app/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

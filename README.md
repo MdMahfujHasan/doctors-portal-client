@@ -9,7 +9,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [https://salty-cliffs-61710.herokuapp.com](https://salty-cliffs-61710.herokuapp.com) to view it in your browser.
+Open [https://home-refinement-server.vercel.app](https://home-refinement-server.vercel.app) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
